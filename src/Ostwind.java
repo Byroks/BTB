@@ -135,10 +135,10 @@ public class Ostwind implements IPlayerController {
         for (Base anArg0 : arg0) {
             if (anArg0.getOwner() == EAlignment.Friendly) {
                 if (count < anArg0.getNumberOfViruses() - getDmg(anArg0, arg1) && BaseDefend!= anArg0) {
-                    //if(getDmg(anArg0, arg1) <= anArg0.getNumberOfViruses()) {
+                    if(getDmg(anArg0, arg1) <= anArg0.getNumberOfViruses()) {
                         origin = anArg0;
                         count = anArg0.getNumberOfViruses() - getDmg(anArg0, arg1);
-                    //}
+                    }
                 }
             }
         }

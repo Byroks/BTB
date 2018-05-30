@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62297fde-f61e-4e19-9bdb-cf7fc11db365" name="Default" comment="" />
+    <list default="true" id="62297fde-f61e-4e19-9bdb-cf7fc11db365" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,8 +18,8 @@
       <file leaf-file-name="Ostwind.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Ostwind.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="139" column="82" selection-start-line="139" selection-start-column="82" selection-end-line="139" selection-end-column="82" />
+            <state relative-caret-position="2122">
+              <caret line="146" column="46" lean-forward="true" selection-start-line="146" selection-start-column="46" selection-end-line="146" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,7 +39,7 @@
       <file leaf-file-name="Apo.class" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/BetterThanBrainv.1.1.4.jar!/Game/Controller/BuiltIn/Apo/Apo.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5685">
+            <state relative-caret-position="5622">
               <caret line="399" selection-start-line="399" selection-end-line="399" />
             </state>
           </provider>
@@ -60,6 +63,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
   </component>
   <component name="IdeDocumentHistory">
@@ -76,6 +80,9 @@
     <option name="y" value="22" />
     <option name="width" value="1434" />
     <option name="height" value="780" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -231,6 +238,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1434" height="780" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -239,8 +247,8 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32796487" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32796487" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -602,13 +610,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JoachimKnobiBot7.java" />
-    <entry file="jar://$PROJECT_DIR$/BetterThanBrainv.1.1.4.jar!/Game/Controller/BuiltIn/Apo/Apo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5685">
-          <caret line="399" selection-start-line="399" selection-end-line="399" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/BetterThanBrainv.1.1.4.jar!/Game/Controller/BuiltIn/Apo/Attack.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -616,10 +617,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/BetterThanBrainv.1.1.4.jar!/Game/Controller/BuiltIn/Apo/Apo.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5622">
+          <caret line="399" selection-start-line="399" selection-end-line="399" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ostwind.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="139" column="82" selection-start-line="139" selection-start-column="82" selection-end-line="139" selection-end-column="82" />
+        <state relative-caret-position="2122">
+          <caret line="146" column="46" lean-forward="true" selection-start-line="146" selection-start-column="46" selection-end-line="146" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
