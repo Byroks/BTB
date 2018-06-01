@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62297fde-f61e-4e19-9bdb-cf7fc11db365" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,8 +17,8 @@
       <file leaf-file-name="Ostwind.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Ostwind.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2122">
-              <caret line="146" column="46" lean-forward="true" selection-start-line="146" selection-start-column="46" selection-end-line="146" selection-end-column="46" />
+            <state relative-caret-position="706">
+              <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,7 +38,7 @@
       <file leaf-file-name="Apo.class" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/BetterThanBrainv.1.1.4.jar!/Game/Controller/BuiltIn/Apo/Apo.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5622">
+            <state relative-caret-position="5685">
               <caret line="399" selection-start-line="399" selection-end-line="399" />
             </state>
           </provider>
@@ -89,8 +88,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -110,41 +107,6 @@
             </path>
             <path>
               <item name="BTB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BTB" type="462c0819:PsiDirectoryNode" />
-              <item name="BetterThanBrainv.1.1.4.jar" type="ab9368bb:PsiFileNode" />
-            </path>
-            <path>
-              <item name="BTB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BTB" type="462c0819:PsiDirectoryNode" />
-              <item name="BetterThanBrainv.1.1.4.jar" type="ab9368bb:PsiFileNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BTB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BTB" type="462c0819:PsiDirectoryNode" />
-              <item name="BetterThanBrainv.1.1.4.jar" type="ab9368bb:PsiFileNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BTB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BTB" type="462c0819:PsiDirectoryNode" />
-              <item name="BetterThanBrainv.1.1.4.jar" type="ab9368bb:PsiFileNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="BuiltIn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BTB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BTB" type="462c0819:PsiDirectoryNode" />
-              <item name="BetterThanBrainv.1.1.4.jar" type="ab9368bb:PsiFileNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="BuiltIn" type="462c0819:PsiDirectoryNode" />
-              <item name="Apo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BTB" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -152,6 +114,8 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -234,6 +198,14 @@
       <option name="presentableId" value="Default" />
       <updated>1526816736791</updated>
     </task>
+    <task id="LOCAL-00001" summary="CheckDeff sucht Basis welche den meisten Schaden bekommt und am wenigsten Viren hat.">
+      <created>1527683572653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527683572653</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -247,12 +219,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32796487" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32796487" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2650862" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26867816" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -270,6 +242,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="CheckDeff sucht Basis welche den meisten Schaden bekommt und am wenigsten Viren hat." />
+    <option name="LAST_COMMIT_MESSAGE" value="CheckDeff sucht Basis welche den meisten Schaden bekommt und am wenigsten Viren hat." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -619,15 +595,15 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/BetterThanBrainv.1.1.4.jar!/Game/Controller/BuiltIn/Apo/Apo.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5622">
+        <state relative-caret-position="5685">
           <caret line="399" selection-start-line="399" selection-end-line="399" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ostwind.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2122">
-          <caret line="146" column="46" lean-forward="true" selection-start-line="146" selection-start-column="46" selection-end-line="146" selection-end-column="46" />
+        <state relative-caret-position="706">
+          <caret line="149" column="9" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
