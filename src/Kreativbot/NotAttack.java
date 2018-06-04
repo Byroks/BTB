@@ -1,3 +1,5 @@
+package Kreativbot;
+
 import Game.Controller.EAlignment;
 
 public class NotAttack {

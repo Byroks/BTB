@@ -34,6 +34,201 @@ public class NotApo implements IPlayerController {
         return "Definitely not Eudemonia Solutions";
     }
 
+    public class NotAttack {
+        private int duration;
+        private EAlignment owner;
+        private int numberOfViruses;
+
+        public NotAttack(int duration, int numberOfViruses, EAlignment owner) {
+            this.duration = duration;
+            this.numberOfViruses = numberOfViruses;
+            this.owner = owner;
+        }
+
+        public int getDuration() {
+            return this.duration;
+        }
+
+        public int getNumberOfViruses() {
+            return this.numberOfViruses;
+        }
+
+        public EAlignment getOwner() {
+            return this.owner;
+        }
+    }
+
+    public class NotDistanceHelper {
+        private final NotMyBase startBase;
+        private final Base enemy;
+        private final int distance;
+
+        public NotDistanceHelper(NotMyBase startBase, Base enemy, int distance) {
+            this.startBase = startBase;
+            this.enemy = enemy;
+            this.distance = distance;
+        }
+
+        public NotMyBase getStartBase() {
+            return this.startBase;
+        }
+
+        public Base getEnemy() {
+            return this.enemy;
+        }
+
+        public int getDistance() {
+            return this.distance;
+        }
+    }
+
+    public class NotMyBase {
+        private Base myBase;
+        private int virusesAttack;
+        private int virusesDefend;
+        private int maxDurationAttack;
+        private int maxDurationDefend;
+        private final ArrayList<NotAttack> attacks;
+        private final ArrayList<Virus> viruses;
+
+        public NotMyBase(Base myBase, ArrayList<Virus> viruses) {
+            this.myBase = myBase;
+            this.viruses = viruses;
+            this.attacks = new ArrayList();
+            this.virusesAttack = 0;
+            this.virusesDefend = 0;
+            this.maxDurationAttack = 0;
+            this.maxDurationDefend = 0;
+            Iterator var3 = viruses.iterator();
+
+            while(var3.hasNext()) {
+                Virus virus = (Virus)var3.next();
+                if (virus.getTarget().getId() == myBase.getId()) {
+                    this.attacks.add(new NotAttack(virus.getDuration(), virus.getNumberOfViruses(), virus.getOwner()));
+                    if (virus.getOwner() != myBase.getOwner()) {
+                        this.virusesAttack += virus.getNumberOfViruses();
+                        if (this.maxDurationAttack < virus.getDuration()) {
+                            this.maxDurationAttack = virus.getDuration();
+                        }
+                    } else if (virus.getOwner() == myBase.getOwner()) {
+                        this.virusesDefend += virus.getNumberOfViruses();
+                        if (this.maxDurationDefend < virus.getDuration()) {
+                            this.maxDurationDefend = virus.getDuration();
+                        }
+                    }
+                }
+            }
+
+        }
+
+        public Base getBase() {
+            return this.myBase;
+        }
+
+        public int getVirusesDefend() {
+            return this.virusesDefend;
+        }
+
+        public int getNumberOfViruses() {
+            return this.myBase.getNumberOfViruses();
+        }
+
+        public EAlignment getOwner() {
+            return this.myBase.getOwner();
+        }
+
+        public int getVirusesAttack() {
+            return this.virusesAttack;
+        }
+
+        public final ArrayList<NotAttack> getAttacks() {
+            return this.attacks;
+        }
+
+        public boolean willFall() {
+            return !this.isGoodToSendVirusToDefend(0);
+        }
+
+        public boolean willFall(int duration) {
+            return !this.isGoodToSendVirusToDefend(0, duration);
+        }
+
+        public boolean isGoodToSendVirusToDefend(int viruses) {
+            int duration = 0;
+            Iterator var3 = this.attacks.iterator();
+
+            while(var3.hasNext()) {
+                NotAttack attack = (NotAttack)var3.next();
+                if (duration < attack.getDuration()) {
+                    duration = attack.getDuration();
+                }
+            }
+
+            return this.isGoodToSendVirusToDefend(viruses, duration);
+        }
+
+        public boolean isGoodToSendVirusToDefend(int viruses, int duration) {
+            int myViruses = this.myBase.getNumberOfViruses() + viruses;
+            if (this.myBase.getOwner() != EAlignment.Neutral) {
+                myViruses += duration * this.myBase.getCurProductionLevel();
+            }
+
+            Iterator var4 = this.attacks.iterator();
+
+            while(var4.hasNext()) {
+                NotAttack attack = (NotAttack)var4.next();
+                if (attack.getDuration() <= duration) {
+                    if (attack.getOwner() != this.myBase.getOwner()) {
+                        myViruses -= attack.getNumberOfViruses();
+                    } else {
+                        myViruses += attack.getNumberOfViruses();
+                    }
+
+                    if (myViruses <= 0) {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
+        }
+
+        public boolean meIsAttackingThePlanet() {
+            Iterator var1 = this.viruses.iterator();
+
+            Virus virus;
+            do {
+                if (!var1.hasNext()) {
+                    return false;
+                }
+
+                virus = (Virus)var1.next();
+            } while(virus.getOwner() != EAlignment.Friendly || virus.getTarget().getId() != this.myBase.getId() || this.myBase.getOwner() != EAlignment.Enemy);
+
+            return true;
+        }
+
+        public int getMaxDurationUntilAttack() {
+            return this.maxDurationAttack;
+        }
+
+        public int getDistanceToPlanet(ArrayList<NotMyBase> bases, GameInformation info) {
+            int distance = 1000000000;
+            Iterator var4 = bases.iterator();
+
+            while(var4.hasNext()) {
+                NotMyBase enemyBase = (NotMyBase)var4.next();
+                int distanceBetweenBases = info.getDistanceBetweenBases(enemyBase.getBase(), this.myBase);
+                if (distance > distanceBetweenBases) {
+                    distance = distanceBetweenBases;
+                }
+            }
+
+            return distance;
+        }
+    }
+
+
     public Order think(ArrayList<Base> bases, ArrayList<Virus> viruses, GameInformation info) {
         NotMyBase origin = null;
         this.setAndFillBases(bases, viruses);
@@ -234,9 +429,9 @@ public class NotApo implements IPlayerController {
         NotMyBase origin = null;
         Map<NotMyBase, Base> bestValueBase = new HashMap();
 
-        int bestValue;
-        for(bestValue = 0; bestValue < this.myBases.size(); ++bestValue) {
-            NotMyBase myBase = (NotMyBase)this.myBases.get(bestValue);
+        int bestValue = 0;
+        for(bestValue = 0; bestValue < this.myBases.size(); bestValue++) {
+            NotMyBase myBase = this.myBases.get(bestValue);
             if (myBase.getNumberOfViruses() >= 3 && (myBase.getVirusesAttack() <= 0 && myBase.getNumberOfViruses() <= 10 || myBase.getNumberOfViruses() - myBase.getVirusesAttack() > 3)) {
                 bestValue = 100000;
                 Iterator var8 = bases.iterator();
@@ -245,7 +440,7 @@ public class NotApo implements IPlayerController {
                     Base enemy = (Base)var8.next();
                     if (enemy.getOwner() != EAlignment.Friendly) {
                         int valueForBase = this.getValueForBase(myBase, enemy, info);
-                        if (valueForBase < bestValue) {
+                        if (valueForBase < bestValue && valueForBase>=0) {
                             bestValue = valueForBase;
                             bestValueBase.put(myBase, enemy);
                         }

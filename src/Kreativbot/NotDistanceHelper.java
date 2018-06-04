@@ -1,3 +1,5 @@
+package Kreativbot;
+
 import Game.Logic.Base;
 
 public class NotDistanceHelper {

@@ -1,3 +1,5 @@
+package Kreativbot;
+
 import Game.Controller.EAlignment;
 import Game.Logic.Base;
 import Game.Logic.GameInformation;
