@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62297fde-f61e-4e19-9bdb-cf7fc11db365" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/BetterThanBrainv_1_1_51.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BTB1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NotApo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NotAttack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NotDistanceHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NotMyBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/BetterThanBrainv_1_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BetterThanBrainv.1.1.4.jar" beforeDir="false" />
-    </list>
+    <list default="true" id="62297fde-f61e-4e19-9bdb-cf7fc11db365" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,8 +36,8 @@
       <file leaf-file-name="NotApo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/NotApo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+            <state relative-caret-position="90">
+              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -239,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527683572653</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".jar update">
+      <created>1528015120183</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1528015120183</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -254,12 +250,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32796487" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32796487" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2722701" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2722701" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -307,7 +303,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CheckDeff sucht Basis welche den meisten Schaden bekommt und am wenigsten Viren hat." />
-    <option name="LAST_COMMIT_MESSAGE" value="CheckDeff sucht Basis welche den meisten Schaden bekommt und am wenigsten Viren hat." />
+    <MESSAGE value=".jar update" />
+    <option name="LAST_COMMIT_MESSAGE" value=".jar update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -661,8 +658,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NotApo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        <state relative-caret-position="90">
+          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
         </state>
       </provider>
     </entry>
