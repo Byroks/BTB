@@ -22,20 +22,15 @@ public class Ostwind implements IPlayerController {
 	
 	private Base searchTarget(Base origin, ArrayList<Base> arg0, GameInformation arg2) {
 		Base targetD = null;
-		Base targetD2 = null;
 		Base target = null;
-		double dist = 250, dmg = 50;
-        //dist-(int)0.8*anArg0.getNumberOfViruses()*anArg0.getCurProductionLevel()
+		int dist = 250;
+
 
         for (Base anArg0 : arg0) {
             targetD = anArg0;
-            if (targetD.getOwner() == EAlignment.Enemy && !checkDist(origin, targetD, dmg, arg2)) {
+            if (targetD.getOwner() == EAlignment.Enemy && !checkDist(origin, targetD, dist, arg2)) {
                 target = targetD;
-                dmg = (target.getNumberOfViruses()+1)+target.getCurProductionLevel()*arg2.getDistanceBetweenBases(origin, target);
-                dist = dmg/target.getCurProductionLevel();
-                for (Base anArg1: arg0){
-
-                }
+                dist = arg2.getDistanceBetweenBases(origin, target);
             }
         }
 
