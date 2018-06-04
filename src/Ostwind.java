@@ -143,15 +143,27 @@ public class Ostwind implements IPlayerController {
                 }
             }
         }
-
+        
+        if(origin == null) {
+            return Order.Idle();
+        }
+        
+        if(arg1!=null){
+        	for (Virus anArg1 : arg1){
+        		if(anArg1.getOwner()==EAlignment.Enemy){
+        			if(anArg1.getTarget().getOwner()==EAlignment.Neutral){
+        				if(checkDist(origin, anArg1.getTarget(), 7, arg2)){
+        					return new Order(origin, anArg1.getTarget(), origin.getNumberOfViruses());
+        				}
+        			}
+        		}
+        	}
+        }
+        
 		if(BaseDefend != null && checkDist(origin, BaseDefend, 4, arg2) && BaseDefend != origin){
 		    if(getDmg(BaseDefend, arg1) > 0) {
                 return new Order(origin, BaseDefend, getDmg(BaseDefend, arg1));
             }
-        }
-
-		if(origin == null) {
-            return Order.Idle();
         }
 
         if(origin.getCurProductionLevel() < 2 && checkUp(origin, arg0, arg2)){
@@ -176,6 +188,9 @@ public class Ostwind implements IPlayerController {
         }
 
         int amount = getAttackAmount(origin, target, arg1, arg2);
+        if(amount>=15 && target.getCurProductionLevel()==1){
+        	return Order.DownGradeRocket(origin, target);
+        }
         return new Order(origin, target, amount);
 	}
 
