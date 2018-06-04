@@ -28,7 +28,7 @@ public class Ostwind implements IPlayerController {
 
         for (Base anArg0 : arg0) {
             targetD = anArg0;
-            if (targetD.getOwner() == EAlignment.Enemy && !checkDist(origin, targetD, dist, arg2)) {
+            if (targetD.getOwner() == EAlignment.Enemy && checkDist(origin, targetD, dist, arg2)) {
                 target = targetD;
                 dist = arg2.getDistanceBetweenBases(origin, target);
             }

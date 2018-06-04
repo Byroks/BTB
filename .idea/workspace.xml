@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62297fde-f61e-4e19-9bdb-cf7fc11db365" name="Default" comment=".jar update">
+    <list default="true" id="62297fde-f61e-4e19-9bdb-cf7fc11db365" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/NotApo.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/NotApo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/NotAttack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/NotDistanceHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/NotMyBase.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Ostwind.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Ostwind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NotApo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NotApo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NotAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kreativbot/NotAttack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NotDistanceHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kreativbot/NotDistanceHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NotMyBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kreativbot/NotMyBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ostwind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ostwind.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,11 +19,20 @@
       <file leaf-file-name="Ostwind.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Ostwind.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+            <state relative-caret-position="-37">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Map.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/BetterThanBrainv.1.1.5.jar!/Game/Logic/Map.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -124,24 +125,7 @@
               <item name="BTB" type="462c0819:PsiDirectoryNode" />
               <item name="BetterThanBrainv.1.1.5.jar" type="ab9368bb:PsiFileNode" />
               <item name="Game" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BTB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BTB" type="462c0819:PsiDirectoryNode" />
-              <item name="BetterThanBrainv.1.1.5.jar" type="ab9368bb:PsiFileNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="BuiltIn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BTB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BTB" type="462c0819:PsiDirectoryNode" />
-              <item name="BetterThanBrainv.1.1.5.jar" type="ab9368bb:PsiFileNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="BuiltIn" type="462c0819:PsiDirectoryNode" />
-              <item name="Apo" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BTB" type="b2602c69:ProjectViewProjectNode" />
@@ -264,7 +248,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528110846794</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="some stuff">
+      <created>1528118511904</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1528118511904</updated>
+    </task>
+    <task id="LOCAL-00005" summary="reverted some stuff">
+      <created>1528120069852</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1528120069852</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -279,12 +277,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32796487" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32796487" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27586207" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27586207" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -333,7 +331,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CheckDeff sucht Basis welche den meisten Schaden bekommt und am wenigsten Viren hat." />
     <MESSAGE value=".jar update" />
-    <option name="LAST_COMMIT_MESSAGE" value=".jar update" />
+    <MESSAGE value="some stuff" />
+    <MESSAGE value="reverted some stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="reverted some stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -341,7 +341,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/BetterThanBrainv.1.1.4.jar!/Game/Controller/BuiltIn/Apo/Apo.class" />
     <entry file="jar://$PROJECT_DIR$/BetterThanBrainv.1.1.4.jar!/Game/Controller/BuiltIn/Apo/MyBase.class" />
     <entry file="file://$PROJECT_DIR$/src/Ostwind.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -518,10 +517,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/BetterThanBrainv.1.1.5.jar!/Game/Logic/Map.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ostwind.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        <state relative-caret-position="-37">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
