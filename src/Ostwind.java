@@ -8,7 +8,7 @@ public class Ostwind implements IPlayerController {
 
 	@Override
 	public String getAuthor() {
-		return "Simon Gustavs";
+		return "Simon Gustavs"; //218691
 	}
 
 	@Override
@@ -188,7 +188,7 @@ public class Ostwind implements IPlayerController {
         }
 
         int amount = getAttackAmount(origin, target, arg1, arg2);
-        if(amount>=15 && target.getCurProductionLevel()==1){
+        if(amount>=15 && target.getCurProductionLevel()==1 && target.getOwner()==EAlignment.Enemy){
         	return Order.DownGradeRocket(origin, target);
         }
         return new Order(origin, target, amount);
